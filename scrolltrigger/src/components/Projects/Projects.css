@@ -1,0 +1,141 @@
+section.cards h2 {
+  font-size: 4rem;
+  font-weight: 500;
+  letter-spacing: -.2rem;
+  line-height: 1.15;
+}
+
+section.cards p {
+  font-size: 1.125rem;
+  line-height: 1.25;
+}
+
+
+section.cards {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 25svh;
+}
+
+section.cards .card {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  padding: 1.5rem;
+  overflow: hidden;
+  will-change: transform;
+}
+
+section.cards .card .card-marquee {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+
+section.cards .card .card-marquee .marquee {
+  display: flex;
+}
+
+section.cards .card .card-marquee .marquee h2 {
+  white-space: nowrap;
+  font-size: 10vw;
+  font-weight: 600;
+  margin-right: 30px;
+  color: #ebc891;
+}
+
+section.cards .card .card-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+section.cards .card .card-wrapper .card-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 70px;
+  padding-top: 50px;
+}
+
+section.cards .card .card-wrapper .card-content .card-title {
+  width: 100%;
+}
+
+section.cards .card .card-wrapper .card-content .card-title h1 {
+  font-size: 5rem;
+  font-weight: 500;
+  letter-spacing: -.1rem;
+  line-height: 1.25;
+}
+
+section.cards .card .card-wrapper .card-content .card-description {
+  width: 40%;
+  position: relative;
+  transform: translateX(40px);
+  opacity: 0;
+}
+
+section.cards .card .card-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 150px;
+  overflow: hidden;
+}
+
+section.cards .card .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  will-change: transform;
+  position: relative;
+}
+
+section.cards .card:nth-child(2) {
+  margin-top: 50vh;
+}
+
+
+
+
+
+
+
+
+
+
+section.cards .char {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+section.cards .char span {
+  transform: translateX(100%);
+  display: inline-block;
+  will-change: transform;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-content, .card-description {
+    width: 90%;
+  }
+}
+
