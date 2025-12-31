@@ -15,7 +15,7 @@ import portfolioProject3 from '../../assets/img/portfolio/vertice.png';
 
 function Projects() {
   useEffect(() => {
-    const cards = gsap.utils.toArray('.card');
+    const cards = gsap.utils.toArray('section.cards .card');
     const introCard = cards[0];
     const lastCard = cards[cards.length - 1];
 
@@ -25,7 +25,7 @@ function Projects() {
         backgroundColor: '#0f0f0f',
       },
       {
-        backgroundColor: '#ffffff',
+        backgroundColor: '#f2f2f2',
         color: '#000000',
         ease: 'power1.inOut',
         scrollTrigger: {
@@ -40,11 +40,11 @@ function Projects() {
     gsap.fromTo(
       'body',
       {
-        backgroundColor: '#ffffff',
+        backgroundColor: '#f2f2f2',
       },
       {
         backgroundColor: '#0f0f0f',
-        color: '#ffffff',
+        color: '#f2f2f2',
         ease: 'none',
         scrollTrigger: {
           trigger: introCard,

@@ -18,7 +18,7 @@ section.hero .right {
 }
 
 section.hero .left .empresas_container {
-  background-color: #fff4e0df;
+  background-color: #faf2e1df;
   border-radius: 50px;
   display: flex;
   align-items: center;
@@ -42,7 +42,10 @@ section.hero .left .empresas_container p {
 section.hero .left h1.title {
   text-transform: uppercase;
   font-size: 38pt;
-  line-height: 60px;
+  line-height: 45px;
+  margin-top: 20px;
+  text-wrap: nowrap;
+  will-change: transform;
 }
 
 section.hero .left h1.title .char {
@@ -55,4 +58,39 @@ section.hero .left h1.title .char span {
   font-family: 'Playfair', serif;
   transform: translateY(100%);
   display: inline-block;
+}
+
+section.hero .left p.intro_text {
+  font-size: 12pt;
+  width: 400px;
+  line-height: 22px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+section.hero .left .buttons {
+  display: flex;
+  gap: 10px;
+  margin-left: -3px;
+}
+
+section.hero .left .buttons .cta {
+  border-radius: 50px;
+  border: 2px solid;
+  border-color: var(--dourado);
+  color: var(--dourado-down-2);
+  font-weight: 500;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #f2f2f2;
+  transition: 0.2s;
+}
+
+section.hero .left .buttons .cta:hover {
+  opacity: 0.8;
+}
+
+section.hero .left .buttons .cta.main_button {
+  background-color: var(--dourado);
+  color: var(--preto);
 }

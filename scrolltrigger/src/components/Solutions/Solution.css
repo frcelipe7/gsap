@@ -1,0 +1,57 @@
+section.solution {
+  padding: 200px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0;
+}
+
+section.solution h2 {
+  font-size: 28pt;
+  margin-bottom: 20px;
+}
+
+section.solution .description {
+  width: 40%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  font-size: 12pt;
+}
+
+section.solution .cards {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+section.solution .cards .card:nth-child(1) {
+  width: 440px;
+}
+
+section.solution .cards .card:nth-child(2) {
+  width: 460px;
+}
+
+section.solution .cards .card .icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+section.solution .cards .card .icon span {
+  font-size: 30pt;
+  color: var(--dourado);
+}
+
+section.solution .cards .card .title {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 12pt;
+}
+
+section.solution .cards .card .text {
+  font-size: 12pt;
+}

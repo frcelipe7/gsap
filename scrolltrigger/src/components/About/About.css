@@ -1,0 +1,137 @@
+section.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+section.about .left {
+  width: 50%;
+  position: relative;
+  padding-left: 100px;
+}
+
+section.about .left .light {
+  position: absolute;
+  width: 400px;
+  height: 150px;
+  background-color: #fdeeda;
+  border-radius: 50%;
+  filter: blur(30px);
+}
+
+section.about .left .light.l1 {
+  left: -300px;
+  top: 60%;
+}
+
+section.about .left .light.l2 {
+  left: 50%;
+  top: -15%;
+  z-index: 1;
+}
+
+section.about .left .light.l3 {
+  left: 55%;
+  top: 75%;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+}
+
+section.about .left img {
+  object-fit: cover;
+}
+
+section.about .left .main_img {
+  position: relative;
+}
+
+section.about .left .main_img img.imagemPrincipal {
+  width: 80%;
+}
+
+section.about .left .main_img .sombra {
+  position: absolute;
+  width: 300px;
+  height: 50px;
+  left: 15%;
+  background-color: #a6a6a6;
+  border-radius: 50%;
+  filter: blur(20px);
+  z-index: -1;
+}
+
+section.about .left img.pjt1 {
+  position: absolute;
+  width: 25%;
+  left: 58%;
+  top: 35%;
+  filter: blur(1.5px);
+  z-index: -1;
+}
+
+section.about .left img.pjt2 {
+  position: absolute;
+  width: 25%;
+  left: 12%;
+  top: 10%;
+  filter: blur(4px);
+  z-index: 1;
+}
+
+section.about .left img.pjt3 {
+  position: absolute;
+  width: 50%;
+  left: 53%;
+  top: 80%;
+  filter: blur(2px);
+  z-index: 1;
+}
+
+section.about .left img.pjt4 {
+  position: absolute;
+  width: 20%;
+  left: 18%;
+  top: 90%;
+  filter: blur(3px);
+  z-index: -1;
+}
+
+section.about .right {
+  width: 50%;
+  padding: 80px;
+  padding-right: 140px;
+}
+
+section.about .right .logo img {
+  width: 150px;
+  margin-bottom: 30px;
+}
+
+section.about .right .main_text p {
+  line-height: 28px;
+}
+
+section.about .right .main_text p span {
+  font-weight: 600;
+}
+
+section.about .right button.cta {
+  margin-top: 30px;
+  border-radius: 50px;
+  border: 2px solid;
+  border-color: var(--dourado);
+  font-weight: 500;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: 0.2s;
+  background-color: var(--dourado);
+  color: var(--preto);
+  margin-left: -8px;
+}
+
+section.about .right button.cta:hover {
+  opacity: 0.8;
+  transform: scale(0.985);
+}

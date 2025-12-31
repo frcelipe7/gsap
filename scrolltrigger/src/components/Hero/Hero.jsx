@@ -42,9 +42,9 @@ function Hero() {
           <p>A sua empresa pode ser a próxima</p>
         </div>
         <h1 className="title">
-          sua empresa pode crescer muito mais no digital
+          sua empresa pode crescer <br /> muito mais no digital
         </h1>
-        <p>
+        <p className="intro_text">
           Soluções únicas, estratégicas e desenvolvidas sob medida para elevar
           sua marca ao mais alto nível
         </p>

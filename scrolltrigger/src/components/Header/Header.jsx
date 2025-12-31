@@ -8,7 +8,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 function Header() {
   useEffect(() => {
-    const cards = gsap.utils.toArray('.card');
+    const cards = gsap.utils.toArray('section.cards .card');
     const introCard = cards[0];
     const lastCard = cards[cards.length - 1];
     const header = document.querySelector('.header');

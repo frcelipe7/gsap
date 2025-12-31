@@ -6,6 +6,8 @@ import { useEffect } from 'react';
 
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
+import About from './components/About/About';
+import Solution from './components/Solutions/Solution';
 import Valores from './components/Valores/Valores';
 import Projects from './components/Projects/Projects';
 
@@ -35,10 +37,10 @@ function App() {
     <>
       <Header />
       <Hero />
+      <About />
+      <Solution />
       <Valores />
       <Projects />
-      <Valores />
-      <Valores />
     </>
   );
 }

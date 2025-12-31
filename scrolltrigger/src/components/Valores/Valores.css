@@ -18,3 +18,57 @@ h2.frase .char span {
   display: inline-block;
   will-change: transform;
 }
+
+section.valores .projetos_img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.valores .valores_container {
+  width: min-content;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 90px;
+  border-top: 2px solid rgb(111, 111, 111);
+  padding-top: 50px;
+}
+
+section.valores .valores_container h3 {
+  font-weight: 500;
+  font-size: 18pt;
+}
+
+section.valores .valores_container .icones_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 40px;
+  opacity: 0.8;
+}
+
+section.valores .valores_container .icones_container .icone {
+  width: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section.valores .valores_container .icones_container .icone.major {
+  width: 130px;
+}
+
+section.valores .valores_container .icones_container .icone.minor {
+  width: 90px;
+}
+
+section.valores .valores_container .icones_container .icone p {
+  text-align: center;
+  font-size: 11pt;
+  font-weight: 500;
+}
