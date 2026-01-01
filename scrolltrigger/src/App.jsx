@@ -10,6 +10,7 @@ import About from './components/About/About';
 import Solution from './components/Solutions/Solution';
 import Valores from './components/Valores/Valores';
 import Projects from './components/Projects/Projects';
+import Processes from './components/Processes/Processes';
 
 import './App.css';
 
@@ -41,6 +42,7 @@ function App() {
       <Solution />
       <Valores />
       <Projects />
+      <Processes />
     </>
   );
 }

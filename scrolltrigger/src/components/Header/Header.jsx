@@ -13,28 +13,28 @@ function Header() {
     const lastCard = cards[cards.length - 1];
     const header = document.querySelector('.header');
 
-    ScrollTrigger.create({
-      trigger: introCard,
-      start: 'top top',
-      end: '+=300vh',
-      onUpdate: (self) => {
-        const progress = self.progress;
-        const headerTop = -progress * 70;
+    // ScrollTrigger.create({
+    //   trigger: introCard,
+    //   start: 'top top',
+    //   end: '+=300vh',
+    //   onUpdate: (self) => {
+    //     const progress = self.progress;
+    //     const headerTop = -progress * 70;
 
-        gsap.set(header, { top: headerTop + 'px' });
-      },
-    });
+    //     gsap.set(header, { top: headerTop + 'px' });
+    //   },
+    // });
 
-    ScrollTrigger.create({
-      trigger: lastCard,
-      start: 'bottom top',
-      onEnter: () => {
-        gsap.to(header, { top: 0, duration: 0.5, ease: 'power2.out' });
-      },
-      onLeaveBack: () => {
-        gsap.to(header, { top: '-70px', duration: 0.5, ease: 'power2.out' });
-      },
-    });
+    // ScrollTrigger.create({
+    //   trigger: lastCard,
+    //   start: 'bottom top',
+    //   onEnter: () => {
+    //     gsap.to(header, { top: 0, duration: 0.5, ease: 'power2.out' });
+    //   },
+    //   onLeaveBack: () => {
+    //     gsap.to(header, { top: '-70px', duration: 0.5, ease: 'power2.out' });
+    //   },
+    // });
 
     return () => {};
   }, []);

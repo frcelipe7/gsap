@@ -1,6 +1,5 @@
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Lenis from 'lenis';
 import SplitType from 'split-type';
 
 import { useEffect } from 'react';
@@ -19,41 +18,41 @@ function Projects() {
     const introCard = cards[0];
     const lastCard = cards[cards.length - 1];
 
-    gsap.fromTo(
-      'body',
-      {
-        backgroundColor: '#0f0f0f',
-      },
-      {
-        backgroundColor: '#f2f2f2',
-        color: '#000000',
-        ease: 'power1.inOut',
-        scrollTrigger: {
-          trigger: lastCard,
-          start: 'top top',
-          end: '+=100vh',
-          scrub: true,
-        },
-      }
-    );
+    // gsap.fromTo(
+    //   'body',
+    //   {
+    //     backgroundColor: '#0f0f0f',
+    //   },
+    //   {
+    //     backgroundColor: '#f2f2f2',
+    //     color: '#000000',
+    //     ease: 'power1.inOut',
+    //     scrollTrigger: {
+    //       trigger: lastCard,
+    //       start: 'top top',
+    //       end: '+=100vh',
+    //       scrub: true,
+    //     },
+    //   }
+    // );
 
-    gsap.fromTo(
-      'body',
-      {
-        backgroundColor: '#f2f2f2',
-      },
-      {
-        backgroundColor: '#0f0f0f',
-        color: '#f2f2f2',
-        ease: 'none',
-        scrollTrigger: {
-          trigger: introCard,
-          start: 'top top',
-          end: '+=300vh',
-          scrub: true,
-        },
-      }
-    );
+    // gsap.fromTo(
+    //   'body',
+    //   {
+    //     backgroundColor: '#f2f2f2',
+    //   },
+    //   {
+    //     // backgroundColor: '#0f0f0f',
+    //     // color: '#f2f2f2',
+    //     ease: 'none',
+    //     scrollTrigger: {
+    //       trigger: introCard,
+    //       start: 'top top',
+    //       end: '+=300vh',
+    //       scrub: true,
+    //     },
+    //   }
+    // );
 
     const splitInstances = [];
 

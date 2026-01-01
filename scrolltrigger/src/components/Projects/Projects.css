@@ -1,7 +1,7 @@
 section.cards h2 {
   font-size: 4rem;
   font-weight: 500;
-  letter-spacing: -.2rem;
+  letter-spacing: -0.2rem;
   line-height: 1.15;
 }
 
@@ -9,7 +9,6 @@ section.cards p {
   font-size: 1.125rem;
   line-height: 1.25;
 }
-
 
 section.cards {
   position: relative;
@@ -64,6 +63,8 @@ section.cards .card .card-wrapper .card-content {
   z-index: 1;
   padding: 70px;
   padding-top: 50px;
+  padding-bottom: 100px;
+  color: var(--branco);
 }
 
 section.cards .card .card-wrapper .card-content .card-title {
@@ -73,7 +74,7 @@ section.cards .card .card-wrapper .card-content .card-title {
 section.cards .card .card-wrapper .card-content .card-title h1 {
   font-size: 5rem;
   font-weight: 500;
-  letter-spacing: -.1rem;
+  letter-spacing: -0.1rem;
   line-height: 1.25;
 }
 
@@ -82,11 +83,13 @@ section.cards .card .card-wrapper .card-content .card-description {
   position: relative;
   transform: translateX(40px);
   opacity: 0;
+  color: #ffffff;
 }
 
 section.cards .card .card-img {
   width: 100%;
-  height: 100%;
+  height: calc(100% - 50px);
+  margin-top: 50px;
   border-radius: 150px;
   overflow: hidden;
 }
@@ -103,15 +106,6 @@ section.cards .card .card-img img {
 section.cards .card:nth-child(2) {
   margin-top: 50vh;
 }
-
-
-
-
-
-
-
-
-
 
 section.cards .char {
   position: relative;
@@ -134,8 +128,8 @@ section.cards .char span {
     font-size: 1.5rem;
   }
 
-  .card-content, .card-description {
+  .card-content,
+  .card-description {
     width: 90%;
   }
 }
-
