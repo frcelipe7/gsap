@@ -28,9 +28,9 @@ function Processes() {
 
       gsap.fromTo(
         'section.processes .left .img_wrapper img',
-        { y: '0%' },
+        { y: '-60%' },
         {
-          y: '-60%',
+          y: '20%',
           ease: 'none',
           scrollTrigger: {
             trigger: 'section.processes',

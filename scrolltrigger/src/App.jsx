@@ -11,6 +11,7 @@ import Solution from './components/Solutions/Solution';
 import Valores from './components/Valores/Valores';
 import Projects from './components/Projects/Projects';
 import Processes from './components/Processes/Processes';
+import Footer from './components/Footer/Footer';
 
 import './App.css';
 
@@ -43,6 +44,7 @@ function App() {
       <Valores />
       <Projects />
       <Processes />
+      <Footer />
     </>
   );
 }
